@@ -1,5 +1,5 @@
 <template>
-  <div class="chatroom">
+  <div class="chatroom pt-5">
   <div class="container-fluid">
   <div class="row">
 
@@ -11,13 +11,12 @@
     </div>
   </div>
 
-  <div class="media mt-3" v-for="(message, key) in messages" :key="key" :class="{'text-success offset-3' : message.username != username }">
-    <img class="mx-3 mt-0" width="50" height="50" src="https://downloads.andyroid.net/wp-content/uploads/2015/12/mr-square-icon.png" v-if="message.username == username">
+  <div class="media mt-3" v-for="(message, key) in messages" :key="key" :class="{'text-success offset-3' : message.username == username }">
+    <img class="mx-3 mt-0" width="50" height="50" src="https://downloads.andyroid.net/wp-content/uploads/2015/12/mr-square-icon.png" >
     <div class="media-body text-justify">
       <h5 class="mt-0">{{message.username}}</h5>
       <p>{{message.message}}</p>
     </div>
-    <img class="mx-3 mt-0" width="50" height="50" src="https://downloads.andyroid.net/wp-content/uploads/2015/12/mr-square-icon.png" v-if="message.username != username">
   </div>
   </div>
 
@@ -49,7 +48,7 @@ export default {
   name: 'chatroom',
   data () {
     return {
-      username: 'Casper',
+      username: 'Liang',
       tempuser: '',
       tempmessage: '',
       messages: [

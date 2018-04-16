@@ -1,0 +1,9 @@
+使用vue webpack
+練習的項目:
+
+-引用Axios(ajax的套件)來接randomuser的API
+
+-外部與內部(component)互傳練習
+
+-Vuex(僅看影片沒做練習)
+>>當多個頁面都需要同一筆資料時會用到
