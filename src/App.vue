@@ -3,7 +3,7 @@
     
   <ul class="nav">
   <li class="nav-item">
-    <router-link class="nav-link" :to="{ path: '/' }">Home</router-link>
+    <router-link class="nav-link" :to="{ path: '/home' }">Home</router-link>
   </li>
   <li class="nav-item">
     <router-link class="nav-link" :to="{ path: '/chatroom' }">聊天室</router-link>
